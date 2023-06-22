@@ -1,15 +1,17 @@
-import { useState } from 'react'
-import './App.css'
+import "./App.css";
+import ReminderList from "./components/ReminderList";
+import Reminder from "./models/reminder";
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const reminder: Reminder[] = [
+    { id: 1, title: "Reminder1" },
+    { id: 2, title: "Reminder2" },
+  ];
   return (
     <>
-      <button className='btn btn-lg btn-primary'>Click ME</button>
-        
+      <ReminderList items ={reminder}/>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
