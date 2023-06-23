@@ -8,7 +8,7 @@ function App() {
     { id: 1, title: "Reminder1" },
     { id: 2, title: "Reminder2" },
   ]);
-
+  
   return (
     <>
       <ReminderList items={reminder} />
