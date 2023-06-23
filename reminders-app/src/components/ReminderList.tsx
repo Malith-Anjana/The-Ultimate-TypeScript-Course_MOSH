@@ -5,8 +5,8 @@ interface ReminderProps {
 }
 
 function ReminderList({items} : ReminderProps){
-  return <ul>
-    {items.map(item => <li key={item.id}>{item.title}</li>)}
+  return <ul className="list-group">
+    {items.map(item => <li className='list-group-item' key={item.id}>{item.title}</li>)}
   </ul>;
 };
 
